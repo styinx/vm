@@ -353,8 +353,6 @@ class VM:
                     if self._is_flag_set(Cpu.RegisterFlag.Sign):
                         self.cpu[Cpu.Register.PC] = val
                     self._print_val(val)
-                    self._print_fill()
-                    self._print_bits(self.cpu[Cpu.Register.RF])
 
                 # Jumps to the given address if the carry flag is 0.
                 elif op == Operator.JmpGR:
